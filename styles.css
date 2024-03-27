@@ -19,7 +19,8 @@ li, a, button{
 }
 
 header img{
-    width: 8%; 
+    width: 6%; 
+    float: left;
 }
 header{
     position: fixed;
@@ -46,7 +47,7 @@ header{
 }
 .nav-menus li{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 
 .nav-menus li a{
@@ -55,6 +56,10 @@ header{
 
 .nav-menus li a:hover{
     background-color: cadetblue;
+}
+.nav-menus li a{
+    /* border: 2px solid red; */
+    padding: 15px 5px;
 }
 
 button{
@@ -175,3 +180,40 @@ table {
   }
   
   tr:nth-child(even) {background-color: #f2f2f2;}
+
+  /* Gallery nav */
+.gallery{
+    max-width: 100%;
+}
+.images{
+    max-width: 100%;
+    text-align: center;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+}
+
+.images li img{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.images li:hover{
+    box-shadow: 0 0 2px 1px cadetblue;
+    /* position: relative;
+    top: -5px; */
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    width: 40%;
+    align-items: center;
+  }
+  /* Library nav */
+  .libr-content h1{
+    padding: 5% 0%;
+    color: brown;
+    text-align: center;
+  }
